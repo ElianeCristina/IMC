@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/style/style.css">
+    <script src="./assets/js/script.js"></script>
+    <title>Calculadora de IMC</title>
+</head>
+<body>
+    <header>
+        <h1>Calculadora de IMC</h1>
+        <div class="cabecalho">
+            <a href="index.html">Início</a>
+            <a href="imc.html">IMC</a>
+            <a href="sobre.html">Sobre mim</a>
+        </div>
+    </header>
+    <main>
+        <form>
+            <fieldset class="dados">
+                <legend>Calcule seu IMC:</legend>
+
+                <div class="dados__inserir">
+                    <label>Nome:</label>
+                    <input class="inserir" type="text" name="" id="nome" required>
+                </div>
+
+                <div class="dados__inserir">                
+                    <label>Altura:</label>
+                    <input class="inserir" type="text" step="0.01" id="altura" required>
+                </div>
+
+                <div class="dados__inserir">
+                    <label>Peso:</label>
+                    <input class="inserir" type="text" step="0.01" id="peso" required>
+                </div>
+
+                <div class="botao">
+                    <button type="button" id="calculo" onclick="calcular()">Calcular</button>
+                    <button type="reset" onclick="resetar()">Novo</button>
+                </div>
+                
+                <div class="dados__result" id="resultado">
+                    <input class="dados__resultado" type="text" name="" id="saida" readonly>
+                </div>
+
+                
+                <div id="texto__saida__alerta">
+
+                    <P>Clique <a href="./imc.html"><strong>aqui</strong></a> e saiba mais sobre a sua classificação.</P>
+                    
+                </div>
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+        <p class="rodape">- Web Designer Eliane Cristina -</p>
+        <div class="nav__footer">
+            <a href="https://github.com/ElianeCristina" target="_blank"><img src="./assets/img/icons8-github-48.png"></a>
+            <a  href="https://www.linkedin.com/in/eliane-cristina-nunes-correia/" target="_blank"><img src="./assets/img/icons8-linkedin-48.png"></a>
+        </div>
+    </footer>
+
+    <script src="./assets/js/script.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,273 @@
+@import url('https://fonts.googleapis.com/css2?family=Adamina&family=Krona+One&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+:root{
+    --cor-fundo:  rgb(248, 240, 229);
+    --cor-principal: rgb(16, 44, 87); 
+    --cor-fundoDois:rgb(234, 219, 200);
+    --cor-fundoTres: rgb(218, 192, 163);
+    --cor-fonte: rgb(66, 71, 105);
+  
+    --fonte:  "Adamina", serif;
+  }
+
+body{
+    width: auto;
+    height: 100%;
+    background-color: var(--cor-fundo);
+    justify-content: center;
+    align-items: center;
+    color: var(--cor-principal);
+    font-family: var(--fonte);
+}
+
+h1{
+    color: var(--cor-principal);
+    font-family: var(--fonte);
+    font-weight: 600;
+    text-align: center;
+}
+
+.cabecalho{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 2rem;
+    text-align: center;
+}
+
+a{
+    text-decoration: none;
+    color: var(--cor-fonte);
+    font-family: var(--fonte);
+}
+
+p{
+    background-color: var(--cor-fundoTres);
+    color: var(--cor-fonte);
+    font-family: var(--fonte);
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 0.3rem;
+}
+
+h2{
+    font-family: var(--fonte);
+    font-weight: 600;
+    color: var(--cor-principal);
+    text-align: center;
+}
+
+fieldset{
+    width: 25rem;
+    height: 25rem;
+    background-color: var(--cor-fundoTres);
+    border-color: var(--cor-principal);
+    border-radius: 20px;
+    box-shadow: 0 0  10px var(--cor-fonte);
+    gap: 1rem;
+}
+
+legend{
+    font-family: var(--fonte);
+    color: var(--cor-principal);
+    font-weight: 600;
+    font-size: 1.3rem;
+    margin-bottom: 0;
+}
+
+.dados{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: var(--cor-fonte);
+    font-family: var(--fonte);
+    font-size: 1rem;
+    font-weight: 500;
+    margin-top: 0;
+}
+
+.dados__inserir{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.dados__inserir input{
+    width: 15rem;
+    height: 2.5rem;
+    border-radius: 5px;
+    text-align: center;
+}
+
+.inserir{
+    border-radius: 5px;
+    border: none;
+    background-color: var(--cor-fundoDois);
+}
+
+#nome{
+    margin-top: 0;
+}
+
+.botao{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+   padding: 0 20%;
+   gap: 2rem;
+}
+
+button{
+    align-items: center;
+    width: 10rem;
+    height: 2.5rem;
+    background: var(--cor-fundoDois);
+    color: var(--cor-principal);
+    border-color: var(--cor-principal);
+    border: double;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+
+.dados__result{
+    padding: 1% 10%;
+}
+
+.dados__resultado {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    width: 20rem;
+    height: 5rem;
+    border-radius: 5%;
+    border: none;
+    background: var(--cor-fundoDois);
+    color: var(--cor-fonte);
+    box-sizing: border-box;
+    user-select: none;
+    font-size: 1rem;
+}
+
+#texto__saida__alerta{
+    display: none;
+    font-size: 0.9rem;
+    text-align: center;
+}
+
+.artigo{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 1% 15%;
+}
+
+.artigo__texto{
+    font-family: var(--fonte);
+    color: var(--cor-principal);
+    font-size: 1rem;
+    text-align: justify;
+}
+
+.tabela {
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0 0 10px var(--cor-fonte);
+    background-color: var(--cor-fundoTres);
+    border: 2px solid var(--cor-principal);
+    width: fit-content;
+    margin: 1.5rem auto;
+}
+
+.tabela table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.tabela th, .tabela td {
+    padding: 10px;
+    border: 2px solid var(--cor-principal);
+    text-align: center;
+}
+
+.artigo__texto__fonte{
+    font-family: var(--fonte);
+    color: var(--cor-principal);
+    font-size: 1rem;
+    text-align: center;
+}
+
+.container{
+    width: 35rem;
+    height: 20rem;
+    background-color: var(--cor-fundoTres);
+    border-color: var(--cor-principal);
+    border-radius: 20px;
+    box-shadow: 0 0  10px var(--cor-fonte);
+    gap: 2rem;
+    margin: 3%;
+}
+
+.container, .sobre{
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.sobre, .sobre_texto{
+    font-size: 1rem;
+    margin: 5%;
+}
+
+.redes{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    gap: 1.5rem;
+}
+
+.imagem{
+    width: 60%;
+    height: 90%;
+    margin-left: 5%;
+    border-color: var(--cor-principal);
+    border-radius: 20px;
+    box-shadow: 0 0  10px var(--cor-fonte);
+    gap: 2rem;
+}
+
+.imagem__img{
+    height: 100%;
+    border-radius: 20px;
+}
+
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+.rodape{
+    font-family: var(--fonte);
+    color: var(--cor-principal);
+    font-weight: 600;
+  }
+
+  .nav__footer{
+    display: flex;
+    flex-direction: row;
+  }
